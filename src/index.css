@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-base: "Roboto", "sans-serif";
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@utility container {
+  @apply px-8 mx-auto;
+}
+
+@utility place-center {
+  @apply place-content-center place-items-center;
+}
