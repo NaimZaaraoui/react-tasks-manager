@@ -6,7 +6,7 @@ const TaskForm = () => {
   const { addTask, setError, addOptimisticTask } = useApp();
 
   const [state, formAction, isPending] = useActionState(
-    async (prevState: unknown, formData: FormData) => {
+    async (_prevState: unknown, formData: FormData) => {
       const title = formData.get("task-title") as string;
       addOptimisticTask(title);
 
